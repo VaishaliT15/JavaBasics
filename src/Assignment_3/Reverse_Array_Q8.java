@@ -1,0 +1,29 @@
+package Assignment_3;
+
+public class Reverse_Array_Q8 {
+    public static void main(String[] args) {
+        int[] arr = {10, 25, 38, 47, 56, 62, 71};
+        int temp;
+
+        System.out.print("Original: ");
+        for (int i=0;i< arr.length; i++)
+        {
+            System.out.print(arr[i]+" ");
+        }
+
+        for (int i=0;i< arr.length/2; i++)
+        {
+            temp = arr[i];
+            arr[i]= arr[arr.length-1-i];
+            arr[arr.length-1-i]=temp;
+        }
+        System.out.println();
+        System.out.print("Reversed: ");
+        for (int i=0;i< arr.length; i++)
+        {
+            System.out.print(arr[i]+" ");
+        }
+
+
+    }
+}
